@@ -1,0 +1,8 @@
+[language-server.nushell-lsp]
+command = "nu --lsp"
+
+[[language]]
+name = "nushell"
+file-types = [ "nu" ]
+scope = "source.nu"
+auto-format = true

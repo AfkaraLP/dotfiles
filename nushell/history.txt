@@ -10664,3 +10664,18 @@ ls -A
 ls -a
 rm -r .git
 cd ..
+git add -A
+git commit -m 
+git commit -m 'update dotfiles'
+git push
+git push --set-upstream origin main
+git push -f
+git push -u origin main -f
+hx .gitignore
+git add -A
+git status
+cd nushell/
+ls
+hx .gitignore
+cd ..
+git status
