@@ -10679,3 +10679,7 @@ ls
 hx .gitignore
 cd ..
 git status
+git reset --hard
+ls
+git pull
+git status
