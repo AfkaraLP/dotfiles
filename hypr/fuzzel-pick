@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+# Build the list: programs + special entries
+programs=$(compgen -c | sort -u)  # all commands
+special="3+5:calculator\n!y something:youtube\n!g something:google"
+
+# Combine
+items=$(echo -e "$special\n$programs")
+
+# Ask Fuzzel
+query=$(echo -e "$items" | fuzzel --dmenu)
+[ -z "$query" ] && exit 0
+
+# Check if it's a calculator input
+if echo "$query" | grep -Eq '^[0-9\.\+\-\*\/\(\) ]+$'; then
+    result=$(echo "$query" | bc -l 2>/dev/null)
+    [ -n "$result" ] && notify-send "Calculator Result" "$result"
+    exit 0
+fi
+
+# Custom bangs
+if [[ "$query" =~ ^!y\ (.*) ]]; then
+    search="${BASH_REMATCH[1]}"
+    firefox --new-window "https://www.youtube.com/results?search_query=${search// /+}" &
+    exit 0
+fi
+
+if [[ "$query" =~ ^!g\ (.*) ]]; then
+    search="${BASH_REMATCH[1]}"
+    firefox --new-window "https://www.google.com/search?q=${search// /+}" &
+    exit 0
+fi
+
+# Run program if exists
+if command -v "$query" >/dev/null 2>&1; then
+    "$query" &
+    exit 0
+fi
+
