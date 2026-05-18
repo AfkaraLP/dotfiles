@@ -1,0 +1,11 @@
+local vars = require("config/variables")
+
+hl.on("hyprland.start", function()
+	hl.exec_cmd(vars.wallpaper_manager)
+	hl.exec_cmd(vars.waybar)
+	hl.exec_cmd(vars.easyeffects)
+	hl.exec_cmd(vars.discord)
+	hl.exec_cmd("hyprctl dispatch moveworkspacetomonitor 1 " .. vars.second_monitor)
+	hl.exec_cmd("gsettings set org.gnome.desktop.interface color-scheme prefer-dark")
+	hl.exec_cmd("gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3")
+end)
