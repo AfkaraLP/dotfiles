@@ -40,10 +40,6 @@ hl.config({
 		follow_mouse = 1,
 	},
 
-	dwindle = {
-		preserve_split = true,
-	},
-
 	master = {
 		new_status = "master",
 	},

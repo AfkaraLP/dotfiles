@@ -2,7 +2,6 @@ local mod = "SUPER"
 local terminal = "wezterm"
 local browser = "firefox"
 local discord = "vesktop"
-local filemanager = "yazi"
 local wallpaper_manager = "wpaperd"
 local waybar = "waybar"
 local easyeffects = "easyeffects"
@@ -17,7 +16,6 @@ return {
 	terminal = terminal,
 	browser = browser,
 	discord = discord,
-	filemanager = filemanager,
 	wallpaper_manager = wallpaper_manager,
 	waybar = waybar,
 	easyeffects = easyeffects,
