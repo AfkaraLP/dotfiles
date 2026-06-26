@@ -1,3 +1,5 @@
+local vars = require("config/variables")
+
 hl.config({
 	general = {
 		layout = "scrolling",
@@ -15,7 +17,7 @@ hl.config({
 		rounding = 10,
 
 		blur = {
-			enabled = true,
+			enabled = not vars.enable_glass,
 			size = 10,
 			passes = 3,
 			vibrancy = 0.9,

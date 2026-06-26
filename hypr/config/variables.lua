@@ -10,6 +10,7 @@ local second_monitor = "desc:HKC OVERSEAS LIMITED S01"
 local shell_commands_path = "/home/afkara/.config/shell_commands"
 local app_picker = "fuzzel"
 local menu = "fuzzel"
+local enable_glass = false
 
 return {
 	mod = mod,
@@ -24,4 +25,5 @@ return {
 	shell_commands_path = shell_commands_path,
 	app_picker = app_picker,
 	menu = menu,
+	enable_glass = enable_glass
 }

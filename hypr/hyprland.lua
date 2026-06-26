@@ -16,3 +16,5 @@ require("config/workspace_rules")
 require("config/keybinds")
 -- config/rules.lua
 require("config/rules")
+-- config/plugins.lua
+require("config/plugins")
