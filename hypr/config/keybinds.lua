@@ -9,7 +9,7 @@ hl.bind(mod .. " + E", hl.dsp.layout("fit active"))
 -- Open app
 hl.bind(mod .. " + F", hl.dsp.exec_cmd(vars.browser))
 hl.bind(mod .. " + T", hl.dsp.exec_cmd(vars.terminal))
-hl.bind(mod .. " + M", hl.dsp.exit())
+hl.bind(mod .. " + M", hl.dsp.exec_cmd(vars.minecraft))
 hl.bind(mod .. " + R", hl.dsp.exec_cmd(vars.menu))
 hl.bind(mod .. " + ALT + S", hl.dsp.exec_cmd("spotify"))
 hl.bind(mod .. " + D", hl.dsp.exec_cmd(vars.discord))

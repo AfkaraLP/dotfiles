@@ -11,6 +11,7 @@ local shell_commands_path = "/home/afkara/.config/shell_commands"
 local app_picker = "fuzzel"
 local menu = "fuzzel"
 local enable_glass = false
+local minecraft = "lunarclient"
 
 return {
 	mod = mod,
@@ -26,4 +27,5 @@ return {
 	app_picker = app_picker,
 	menu = menu,
 	enable_glass = enable_glass,
+	minecraft = minecraft,
 }
