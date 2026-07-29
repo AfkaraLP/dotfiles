@@ -1,5 +1,5 @@
 local mod = "SUPER"
-local terminal = "wezterm"
+local terminal = "wezterm start --always-new-process"
 local browser = "firefox"
 local discord = "discord"
 local wallpaper_manager = "wpaperd"
@@ -25,5 +25,5 @@ return {
 	shell_commands_path = shell_commands_path,
 	app_picker = app_picker,
 	menu = menu,
-	enable_glass = enable_glass
+	enable_glass = enable_glass,
 }

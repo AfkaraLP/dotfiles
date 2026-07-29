@@ -17,7 +17,7 @@
           "#ff8080ff"
         ],
         "background.appearance": "transparent",
-        "background": "#00000000"  
+        "background": "#00000000",
         "border": "#80808055",
         "border.variant": "#80808033",
         "border.focused": "#ffffffff",
