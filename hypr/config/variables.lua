@@ -1,6 +1,6 @@
 local mod = "SUPER"
 local terminal = "wezterm start --always-new-process"
-local browser = "firefox"
+local browser = "glide"
 local discord = "discord"
 local wallpaper_manager = "wpaperd"
 local waybar = "waybar"
