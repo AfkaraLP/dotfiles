@@ -64,7 +64,7 @@ hl.bind(
 )
 
 -- Fuzzel picker
-hl.bind(mod .. " + W", hl.dsp.exec_cmd("/home/afkara/.config/hypr/fuzzel-pick"))
+hl.bind(mod .. " + W", hl.dsp.exec_cmd("vicinae open"))
 
 -- Screenshot
 hl.bind(mod .. " + SHIFT + S", hl.dsp.exec_cmd("wayfreeze & PID=$!; sleep .1; grimshot copy area; kill $PID"))
