@@ -51,3 +51,10 @@ hl.config({
 		force_default_wallpaper = 0,
 	},
 })
+
+-- Vicinae injects physical QWERTY Ctrl+V; keep Workman on real keyboards.
+hl.device({
+	name = "vicinae-snippet-virtual-keyboard",
+	kb_layout = "us",
+	kb_variant = "",
+})
